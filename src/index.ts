@@ -1,6 +1,6 @@
 declare const Liferay;
 
-import initFramework from '@liferay-editor-custom-fields/framework';
+import initFramework from '../../liferay-editor-custom-fields-framework-2/build/static';
 import { addBlurHash } from "./blurhash/addBlurHash";
 import { addFocalPointButton } from "./focalPointButton/addFocalPointButton";
 

@@ -1,4 +1,4 @@
-import { getPreviewImage } from "@liferay-editor-custom-fields/framework";
+import { getPreviewImage } from "../../../liferay-editor-custom-fields-framework-2/build/static";
 import { createFocalPointModal } from "../focalPointModal/createFocalPointModal";
 
 export const handleFocalPointClick = (focalPointClickEvent: MouseEvent) => {

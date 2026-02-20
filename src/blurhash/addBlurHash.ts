@@ -1,5 +1,5 @@
 import { encode } from "blurhash";
-import { getPreviewImage, getContentImageInput, getFieldByLabel, setReactDomInputValue } from "@liferay-editor-custom-fields/framework";
+import { getPreviewImage, getContentImageInput, getFieldByLabel, setReactDomInputValue } from "../../../liferay-editor-custom-fields-framework-2/build/static";
 import { blurhashToGradientCssObject } from "@unpic/placeholder";
 import { getSrcFromObservedEl } from "../util";
 

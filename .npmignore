@@ -1,0 +1,6 @@
+src/
+docs/
+tsconfig.json
+eslint.config.mjs
+yarn.lock
+yarn-error.log

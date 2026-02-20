@@ -1,0 +1,34 @@
+{
+  "name": "@liferay-editor-custom-fields/image-enhancements",
+  "repository": "https://github.com/lbeharxtivia/liferay-editor-custom-fields-image-enhancements",
+  "author": "lbehar@xtivia.com",
+  "license": "MIT",
+  "description": "Adds focal point and blurhash using the Liferay Editor Custom Fields framework",
+  "dependencies": {
+    "@liferay-editor-custom-fields/framework": "~7.4.7",
+    "@unpic/placeholder": "^0.1.2",
+    "blurhash": "^2.0.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-webpack-plugin": "^5.0.2",
+    "ts-loader": "9.5.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.55.0",
+    "webpack": "5.90.1",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "4.15.1"
+  },
+  "files": [
+    "build"
+  ],
+  "module": "./build/static/index.js",
+  "types": "./build/static/index.d.ts",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve",
+    "watch": "tsc --watch"
+  },
+  "version": "7.4.11"
+}

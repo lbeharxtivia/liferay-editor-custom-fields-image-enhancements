@@ -1,0 +1,113 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+         {
+          "name": "isAboveTheFold",
+          "label": "Above the fold?",
+          "description": "Image fetchpriority will be set to high if this is checked",
+          "type": "checkbox",
+          "defaultValue": false
+        },
+        {
+          "name": "aspectRatio",
+          "label": "Aspect Ratio",
+          "type": "select",
+          "dataType": "string",
+          "typeOptions": {
+            "validValues": [
+              { "value": "auto" },
+              { "value": "16/9" },
+              { "value": "3/2" },
+              { "value": "4/3" },
+              { "value": "1/1" },
+              { "value": "3/4" },
+              { "value": "9/16" }
+            ]
+          },
+          "defaultValue": "16/9"
+        },
+        {
+          "name": "aspectRatioMd",
+          "label": "Aspect Ratio (max 768px)",
+          "type": "select",
+          "dataType": "string",
+          "typeOptions": {
+            "validValues": [
+              { "value": "" },
+              { "value": "auto" },
+              { "value": "16/9" },
+              { "value": "3/2" },
+              { "value": "4/3" },
+              { "value": "1/1" },
+              { "value": "3/4" },
+              { "value": "9/16" }
+            ]
+          },
+          "defaultValue": ""
+        },
+        {
+          "name": "aspectRatioLg",
+          "label": "Aspect Ratio (max 992px)",
+          "type": "select",
+          "dataType": "string",
+          "typeOptions": {
+            "validValues": [
+              { "value": "" },
+              { "value": "auto" },
+              { "value": "16/9" },
+              { "value": "3/2" },
+              { "value": "4/3" },
+              { "value": "1/1" },
+              { "value": "3/4" },
+              { "value": "9/16" }
+            ]
+          },
+          "defaultValue": ""
+        },
+        {
+          "name": "aspectRatioXl",
+          "label": "Aspect Ratio (max 1200px)",
+          "type": "text",
+          "dataType": "string"
+        },
+        {
+          "name": "minHeight",
+          "label": "Min Height",
+          "type": "text",
+          "dataType": "string"
+        },
+        {
+          "name": "focalPointX",
+          "label": "Focal Point X",
+          "description": "Image Focal Point, % from left",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "50"
+        },
+        {
+          "name": "focalPointY",
+          "label": "Focal Point Y",
+          "description": "Image Focal Point, % from top",
+          "type": "text",
+          "dataType": "string",
+          "defaultValue": "50"
+        },
+        {
+          "name": "blurHash",
+          "label": "BlurHash",
+          "description": "This will be supplied by client extension",
+          "type": "text",
+          "dataType": "string"
+        },
+        {
+          "name": "videoLoopUri",
+          "label": "Video Loop URI",
+          "description": "This should be an mp4. It will be displayed with no sound on a loop",
+          "type": "text",
+          "dataType": "string"
+        }
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "license": "MIT",
   "description": "Adds focal point and blurhash using the Liferay Editor Custom Fields framework",
   "dependencies": {
-    "@liferay-editor-custom-fields/framework": "~7.4.7",
+    "@liferay-editor-custom-fields/framework": "^74.0.0",
     "@unpic/placeholder": "^0.1.2",
     "blurhash": "^2.0.5"
   },
@@ -30,5 +30,5 @@
     "start": "webpack serve",
     "watch": "tsc --watch"
   },
-  "version": "7.4.11"
+  "version": "74.0.0"
 }

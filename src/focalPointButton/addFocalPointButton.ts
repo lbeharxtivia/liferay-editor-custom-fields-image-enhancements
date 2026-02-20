@@ -1,4 +1,4 @@
-import { getFieldByLabel } from "../../../liferay-editor-custom-fields-framework-2/build/static";
+import { getFieldByLabel } from "@liferay-editor-custom-fields/framework";
 import { handleFocalPointClick } from "./handleFocalPointClick";
 
 /**

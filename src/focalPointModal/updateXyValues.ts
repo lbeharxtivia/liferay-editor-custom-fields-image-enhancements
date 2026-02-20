@@ -1,4 +1,4 @@
-import { getFieldByLabel, setReactDomInputValue } from "../../../liferay-editor-custom-fields-framework-2/build/static";
+import { getFieldByLabel, setReactDomInputValue } from "@liferay-editor-custom-fields/framework";
 
 // Defining an interface for the function arguments
 interface UpdateXyValuesArgs {

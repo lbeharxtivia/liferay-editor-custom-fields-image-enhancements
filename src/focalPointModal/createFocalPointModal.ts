@@ -1,4 +1,4 @@
-import { getFieldByLabel, getPreviewImage } from "../../../liferay-editor-custom-fields-framework-2/build/static";
+import { getFieldByLabel, getPreviewImage } from "@liferay-editor-custom-fields/framework";
 import { createDialog } from "./createDialog";
 import { showSuccessBorder } from "./showSuccessBorder";
 import { updateXyValues } from "./updateXyValues";

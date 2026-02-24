@@ -30,5 +30,5 @@
     "start": "webpack serve",
     "watch": "tsc --watch"
   },
-  "version": "74.0.0"
+  "version": "26.0.0"
 }

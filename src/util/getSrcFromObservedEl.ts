@@ -3,7 +3,7 @@ import { getThumbnailUri } from "./getThumbnailUri";
 export const getSrcFromObservedEl = (elToObserve) => {
     let src;
     // Web content has image info in input
-    if (elToObserve?.tagName?.toLowerCase() === 'input') {
+    if (elToObserve && elToObserve.tagName?.toLowerCase() === 'input') {
         try {
             const imageInfo = JSON.parse((elToObserve as HTMLInputElement).value);
             const { fileEntryId = null, url = null } = imageInfo;
@@ -14,7 +14,7 @@ export const getSrcFromObservedEl = (elToObserve) => {
             console.error(error);
         }
         // fragments have the thumbnail URL in source
-    } else if (elToObserve?.tagName?.toLowerCase() === 'img') {
+    } else if (elToObserve && elToObserve.tagName?.toLowerCase() === 'img') {
         const sourceEl = elToObserve?.parentElement?.firstElementChild as HTMLSourceElement;
         src = sourceEl?.srcset;
     }

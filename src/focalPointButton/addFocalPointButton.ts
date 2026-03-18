@@ -32,7 +32,7 @@ export const addFocalPointButton = () => {
         }
         if (
             formFieldContainer &&
-            !formFieldContainer?.parentElement.parentElement.querySelector(".focal-point-button")
+            !formFieldContainer?.parentElement.parentElement.parentElement.querySelector(".focal-point-button")
         ) {
             const buttonSpot = (inputY as HTMLInputElement).closest(".col-ddm") || (inputY as HTMLInputElement).parentElement;
             buttonSpot.after(focalPointButton);

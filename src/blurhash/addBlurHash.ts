@@ -13,11 +13,11 @@ const loadImage = async src =>
 
 const getImageData = image => {
     const canvas = document.createElement("canvas");
-    canvas.width = image.width;
-    canvas.height = image.height;
+    canvas.width = 32;
+    canvas.height = 32;
     const context = canvas.getContext("2d");
-    context.drawImage(image, 0, 0);
-    return context.getImageData(0, 0, image.width, image.height);
+    context.drawImage(image, 0, 0, 32, 32);
+    return context.getImageData(0, 0, 32, 32);
 };
 
 const encodeImageToBlurhash = async imageUrl => {
